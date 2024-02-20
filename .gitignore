@@ -396,3 +396,13 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Environnement
+venv
+
+
+# test lo
+Packages.py
+Scrip_Api.py
+ScriptLaurence.ipynb 
+import os.py
