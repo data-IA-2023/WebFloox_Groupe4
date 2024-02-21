@@ -1,7 +1,7 @@
 import os
 
 # URL du référentiel GitHub contenant le fichier requirements.txt
-github_repo_url = "https://github.com/data-IA-2023/WebFloox_Groupe4/blob/main/requirements.txtpip install "
+github_repo_url = "https://github.com/data-IA-2023/WebFloox_Groupe4.git "
 
 # Cloner le référentiel GitHub localement
 os.system(f"git clone {github_repo_url}")
@@ -10,7 +10,7 @@ os.system(f"git clone {github_repo_url}")
 local_repo_path = os.path.basename(github_repo_url)
 
 # Chemin complet du fichier requirements.txt
-requirements_file_path = os.path.join(local_repo_path, "requirements.txt")
+requirements_file_path = os.path.join(local_repo_path, "Importation-RequirementsPackage.py")
 
 # Vérifier si le fichier requirements.txt existe
 if os.path.exists(requirements_file_path):
