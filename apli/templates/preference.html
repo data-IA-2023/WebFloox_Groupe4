@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Préférence</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    {% if user_statut == True %}
+    <a href="/">Home</a>
+    <a href="/logout">Logout</a>
+    <a href="/recommendation">Recommendation</a>
+    <a href="/preference">Préférence</a> 
+    {% else %}     
+    <a href="/">Home</a>
+    <a href="/inscription">Inscription</a>
+    <a href="/login">Login</a>
+    {% endif %}
+</div>
+
+
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src={{ url_for('static', filename='logo.png') }} class="img-responsive center-block" alt="Logo">
+    </span>
+    <h2>Préférence</h2>
+    <p>
+
+    </p>
+</div>
+
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+   
+</body>
+</html> 

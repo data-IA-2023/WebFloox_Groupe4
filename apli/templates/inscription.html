@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    {% if user_statut == True %}
+    <a href="/">Home</a>
+    <a href="/logout">Logout</a>
+    <a href="/recommendation">Recommendation</a>
+    <a href="/preference">Préférence</a> 
+    {% else %}     
+    <a href="/">Home</a>
+    <a href="/inscription">Inscription</a>
+    <a href="/login">Login</a>
+    {% endif %}
+</div>
+
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src={{ url_for('static', filename='logo.png') }} class="img-responsive center-block" alt="Logo">
+    </span>
+    <h2>Inscription</h2>
+    <p>
+        <form method="POST">
+            {% if succes_get %}
+            <h5>Succes : {{ succes_get }}</h5>
+            {% endif %}
+            <h4>Identifiant</h4>
+            {% if error_get %}
+            <h5>Error : {{ error_get }}</h5>
+            <input type="text" name="identifiant_get" required>
+            {% else %}
+            <input type="text" name="identifiant_get" required>
+            {% endif %}
+            <h4>Mot de passe</h4>
+            <input type="password" name="mot_de_passe_get" required>
+            <input type="submit">
+        </form>
+    </p>
+</div>
+
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+   
+</body>
+</html> 
