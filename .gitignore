@@ -398,4 +398,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Environnement
-venv
+flaskenv
+
+# Fichier SQL
+sql
