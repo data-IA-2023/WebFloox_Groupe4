@@ -84,6 +84,7 @@ else :
     df = pd.read_json(f"{repertoir_fichier}\\users_data.json")
 
 # crée la liste d'utilisateur
+df = df.fillna(0)
 print(df)
 list_users = df["identifiant"].to_list()
 print(list_users)
@@ -169,9 +170,16 @@ def login():
             if mot_de_passe_var == mot_de_passe_item :
                 # création de l'utilisateur
                 pref_list = user_connect["preference"].to_dict()
-                if pref_list[0] == np.nan :
-                    pref_list = {}
-                user_obj = m_user(identifiant_var, mot_de_passe_var, pref_list)
+                print(pref_list)
+                if len(pref_list.items()) == 1 : 
+                    for cle, valeur in pref_list.items():
+                        if valeur == 0 :
+                            pref_dict = {}
+                        else :
+                            pref_dict = pref_list
+                else :
+                    pref_dict = pref_list
+                user_obj = m_user(identifiant_var, mot_de_passe_var, pref_dict)
                 
                 # is_authenticated = true
                 connect_user = user_obj.is_authenticated
