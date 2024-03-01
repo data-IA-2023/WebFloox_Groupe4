@@ -37,7 +37,7 @@ Un modèle final est entraîné en utilisant le meilleur pipeline identifié par
 
 Ce script démontre une approche complète pour la construction, l'optimisation et l'évaluation de modèles d'apprentissage automatique pour prédire des notes de films en utilisant diverses techniques de prétraitement des données et des algorithmes d'apprentissage automatique.
 
-* **style** contient du code CSS qui définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton.
+* Le fichier **style.css** contient du code CSS qui définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton.
 
 Ce code CSS définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton. Voici une explication ligne par ligne :
 
