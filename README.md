@@ -19,6 +19,7 @@
 
   
 * **Code Python** :
+  * Le fichier *requirements.txt* indique l'ensemble des packages qui seront utilisés dans ce projet.
   * *xxxxxxx* nous permet avec l'input d'un film de ressortir 5 films les plus similaires. Il s'appuie sur le CSV cosine_features.csv qui contient l'ensemble des films et des features importantes.
   * *xxxxxx* est le script pour la réalisation des graphiques sous python.
 Cette section lit des fichiers CSV contenant des données sur les films, et utilise _plotnine_ ou _matplotlib_ pour créer un scatter plot, box plot, pairplot, ou des camemberts représentant les informations du data set.
