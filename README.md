@@ -37,6 +37,9 @@ Un modèle final est entraîné en utilisant le meilleur pipeline identifié par
 
 Ce script démontre une approche complète pour la construction, l'optimisation et l'évaluation de modèles d'apprentissage automatique pour prédire des notes de films en utilisant diverses techniques de prétraitement des données et des algorithmes d'apprentissage automatique.
 
+
+
+
 * Le fichier **style.css** contient du code CSS qui définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton.
 
 Ce code CSS définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton. Voici une explication ligne par ligne :
@@ -71,5 +74,12 @@ Ce code CSS définit les styles pour un menu latéral (sidenav) qui s'ouvre et s
    - Ajoute des styles spécifiques lorsque la hauteur de l'écran est inférieure à 450 pixels.
    - Réduit l'espacement supérieur de la barre de navigation et la taille de police des liens.
 
+* Le fichier *home.html* situé dans : apli/templates/home.html contient le code HTML  de base pour une page web avec un menu latéral réactif (sidenav) qui s'ouvre et se ferme au clic d'un bouton.
 
-  Notre projet combine un système de recommandation de films basé sur le contenu déjà noté par l'utilisateur, avec un modèle de prédiction de popularité des films. L'utilisateur peut interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. 
+
+
+
+
+
+
+  ## Notre projet combine un système de recommandation de films basé sur le contenu déjà noté par l'utilisateur, avec un modèle de prédiction de popularité des films. L'utilisateur peut interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. 
