@@ -72,4 +72,4 @@ Ce code CSS définit les styles pour un menu latéral (sidenav) qui s'ouvre et s
    - Réduit l'espacement supérieur de la barre de navigation et la taille de police des liens.
 
 
-  Notre script combine un système de recommandation de films basé sur le contenu avec un modèle de prédiction de popularité des films. Les utilisateurs peuvent interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. Ils peuvent également utiliser le modèle pour prédire la popularité potentielle d'un film en fonction de ses caractéristiques.
+  Notre projet combine un système de recommandation de films basé sur le contenu déjà noté par l'utilisateur, avec un modèle de prédiction de popularité des films. L'utilisateur peut interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. 
