@@ -37,5 +37,39 @@ Un modèle final est entraîné en utilisant le meilleur pipeline identifié par
 
 Ce script démontre une approche complète pour la construction, l'optimisation et l'évaluation de modèles d'apprentissage automatique pour prédire des notes de films en utilisant diverses techniques de prétraitement des données et des algorithmes d'apprentissage automatique.
 
-* **xxxxxxxx** contient le code pour l'application.
+* **style** contient du code CSS qui définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton.
+
+Ce code CSS définit les styles pour un menu latéral (sidenav) qui s'ouvre et se ferme au clic d'un bouton. Voici une explication ligne par ligne :
+
+ `body { font-family: "Lato", sans-serif; }` Définit que tout le texte dans le corps de la page sera affiché en police "Lato" ou en police sans serif si "Lato" n'est pas disponible. `.sidenav { height: 100%;width: 0;position: fixed; z-index: 1;top: 0; left: 0; background-color: #111;overflow-x: hidden; transition: 0.5s;padding-top: 60px;}`
+   - Définit les styles pour la barre de navigation latérale.
+   - Elle est positionnée de manière fixe (`position: fixed`) afin qu'elle reste en place lorsque l'utilisateur fait défiler la page.
+   - Sa largeur initiale est de 0, ce qui signifie qu'elle est fermée par défaut.
+   - `z-index: 1` assure que la barre de navigation reste au-dessus du contenu principal.
+   - `background-color: #111` définit la couleur de fond à un noir foncé.
+   - `overflow-x: hidden` cache tout contenu qui dépasse horizontalement de la barre de navigation.
+   - `transition: 0.5s` ajoute une transition de 0,5 seconde pour une ouverture en douceur.
+   - `padding-top: 60px` ajoute un espace en haut de la barre de navigation pour éviter qu'elle ne chevauche le contenu.
+     
+ `.sidenav a { padding: 8px 8px 8px 32px;text-decoration: none;font-size: 25px;color: #b2b2b2; display: block; transition: 0.3s; }`
+   - Définit les styles pour les liens à l'intérieur de la barre de navigation.
+   - `padding` définit l'espacement intérieur des liens.
+   - `text-decoration: none` supprime les soulignements des liens.
+   - `font-size: 25px` définit la taille de la police des liens.
+   - `color: #b2b2b2` définit la couleur du texte des liens.
+   - `display: block` affiche les liens comme des blocs afin qu'ils remplissent toute la largeur de la barre de navigation.
+   - `transition: 0.3s` ajoute une transition de 0,3 seconde lorsqu'on survole les liens.
+
+`.sidenav a:hover { color: #f1f1f1; } }`Change la couleur du texte des liens lorsque l'utilisateur survole un lien avec la souris.
+
+`.sidenav .closebtn {position: absolute;top: 0; right: 25px;font-size: 36px;margin-left: 50px; }` Styles pour le bouton de fermeture de la barre de navigation.
+ Il est positionné en haut à droite de la barre de navigation. `font-size: 36px` définit la taille de la police du bouton de fermeture.
+
+ `#main {transition: margin-left .5s; padding: 16px;}` Définit les styles pour la section principale de la page. La transition spécifiée permet un déplacement en douceur (`margin-left`) lorsque la barre de navigation est ouverte ou fermée.
+
+`@media screen and (max-height: 450px) {.sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;} }`
+   - Ajoute des styles spécifiques lorsque la hauteur de l'écran est inférieure à 450 pixels.
+   - Réduit l'espacement supérieur de la barre de navigation et la taille de police des liens.
+
+
   Notre script combine un système de recommandation de films basé sur le contenu avec un modèle de prédiction de popularité des films. Les utilisateurs peuvent interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. Ils peuvent également utiliser le modèle pour prédire la popularité potentielle d'un film en fonction de ses caractéristiques.
