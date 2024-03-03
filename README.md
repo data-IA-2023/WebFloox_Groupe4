@@ -5,7 +5,7 @@
   https://trello.com/b/uU3wjKIq/webfloox
   
 
-* **La Présentation** : 
+* **La Présentation** : https://github.com/data-IA-2023/WebFloox_Groupe4/blob/main/Webfloox.pdf
 
 * **Documentation** : https://developer.imdb.com/non-commercial-datasets/   et   https://help.imdb.com/article/contribution/other-submission-guides/country-codes/G99K4LFRMSC37DCN# 
 
@@ -82,4 +82,4 @@ Ce code CSS définit les styles pour un menu latéral (sidenav) qui s'ouvre et s
 
 
 
-  ## Notre projet combine un système de recommandation de films basé sur le contenu déjà noté par l'utilisateur, avec un modèle de prédiction de popularité des films. L'utilisateur peut interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. 
+  ### Notre projet combine un système de recommandation de films basé sur le contenu déjà noté par l'utilisateur, avec un modèle de prédiction de popularité des films. L'utilisateur peut interagir avec l'application en saisissant le nom d'un film, en explorant les détails des films et en obtenant des recommandations personnalisées. 
