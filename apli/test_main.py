@@ -7,6 +7,14 @@ import json
 
 from module_utilisateur import utilisateur as m_user
 
+import database
+
+q = database.query_retourn()
+
+df = pd.DataFrame.from_records(q)
+print(df)
+
+"""
 # fonction de hashage de mot de passe
 def hashage(valeur):
     return hashlib.md5(valeur.encode("utf-8")).hexdigest()
@@ -42,3 +50,4 @@ global connect_user
 connect_user = user_obj.is_authenticated
 print("connect_user", connect_user)
 print(user_obj)
+"""

@@ -93,14 +93,14 @@ class utilisateur() :
         """
         return self.identifiant
     
-    def ajout_preference (self, video_preference):
+    def ajout_preference (self, key, value):
         """
         entée = un objet de classe video_IMDB
         sorti = /
         =================================
         ajout l'objet a la liste de préférence
         """ 
-        self.preference_video_IMDB.append(video_preference)
+        self.preference_video_IMDB[key]=value
 
     def get_preference (self):
         """

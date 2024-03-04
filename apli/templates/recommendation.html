@@ -10,28 +10,32 @@
 <body>
 
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    {% if user_statut == True %}
-    <a href="/">Home</a>
-    <a href="/logout">Logout</a>
-    <a href="/recommendation">Recommendation</a>
-    <a href="/preference">Préférence</a> 
-    {% else %}     
-    <a href="/">Home</a>
-    <a href="/inscription">Inscription</a>
-    <a href="/login">Login</a>
-    {% endif %}
+    <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        {% if user_statut == True %}
+        <a href="/">Home</a>
+        <a href="/logout">Logout</a>
+        <a href="/recommendation">Recommendation</a>
+        <a href="/preference">Préférence</a> 
+        {% else %}     
+        <a href="/">Home</a>
+        <a href="/inscription">Inscription</a>
+        <a href="/login">Login</a>
+        {% endif %}
+    </center>
 </div>
 
 
 <div id="main">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-        <img src={{ url_for('static', filename='logo.png') }} class="img-responsive center-block" alt="Logo">
+        <img src={{ url_for('static', filename='logo.png') }} class="img-responsive center-block" id="Logo">
     </span>
-    <h2>Recommendation</h2>
-    <p>
+    <center>
+        <h2>Recommendation</h2>
+        <p>
 
-    </p>
+        </p>
+    </center>
 </div>
 
 <script>

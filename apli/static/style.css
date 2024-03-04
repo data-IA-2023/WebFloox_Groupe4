@@ -36,6 +36,32 @@ font-size: 36px;
 margin-left: 50px;
 }
 
+#Logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.film {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f7f4f4;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.film_detaille{
+    padding: 20px;
+    margin: 10px;
+    background-color: #f7f4f4;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#poster {
+    max-height: 200px;
+    max-width: 200px;
+}
+
 #main {
 transition: margin-left .5s;
 padding: 16px;
