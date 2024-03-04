@@ -8,38 +8,41 @@
 
 </head>
 <body>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        {% if user_statut == True %}
-        <a href="/">Home</a>
-        <a href="/logout">Logout</a>
-        <a href="/recommendation">Recommendation</a>
-        <a href="/preference">Préférence</a> 
-        {% else %}     
-        <a href="/">Home</a>
-        <a href="/inscription">Inscription</a>
-        <a href="/login">Login</a>
-        {% endif %}
-    </div>
+    <center>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            {% if user_statut == True %}
+            <a href="/">Home</a>
+            <a href="/logout">Logout</a>
+            <a href="/recommendation">Recommendation</a>
+            <a href="/preference">Préférence</a> 
+            {% else %}     
+            <a href="/">Home</a>
+            <a href="/inscription">Inscription</a>
+            <a href="/login">Login</a>
+            {% endif %}
+        </div>
+    </center>
 
     <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-            <img src={{ url_for('static', filename='logo.png') }} class="img-responsive center-block" alt="Logo">
+            <img src={{ url_for('static', filename='logo.png') }} class="img-responsive center-block" id="Logo">
         </span>
-        <h2>Login</h2>
-        <p>
-            <form method="POST">
-                {% if error_get %}
-                <h5>Error : {{ error_get }}</h5>
-                {% endif %}
-                <h4>Identifiant</h4>
-                <input type="text" name="identifiant_get" required>
-                <h4>Mot de passe</h4>
-                <input type="password" name="mot_de_passe_get" required>
-                <input type="submit">
-            </form>
-        </p>
+        <center>
+            <h2>Login</h2>
+            <p>
+                <form method="POST">
+                    {% if error_get %}
+                    <h5>Error : {{ error_get }}</h5>
+                    {% endif %}
+                    <h4>Identifiant</h4>
+                    <input type="text" name="identifiant_get" required>
+                    <h4>Mot de passe</h4>
+                    <input type="password" name="mot_de_passe_get" required>
+                    <input type="submit">
+                </form>
+            </p>
+        </center>
     </div>
 
     <script>
