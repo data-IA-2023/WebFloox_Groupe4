@@ -62,7 +62,7 @@ class video_IMDB() :
     archive_sound: list[str] # archive_sound
     averageRating: list[str] # averageRating
     numVotes: list[str] # numVotes
-    region: int # count des differentes region
+    region: int # count des differentes regions
     resume: str # à crée
     image: image() # à crée
 
