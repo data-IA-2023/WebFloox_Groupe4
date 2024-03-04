@@ -14,9 +14,10 @@
 * **Code Python** :
   * Le fichier *requirements.txt* indique l'ensemble des packages qui seront utilisés dans ce projet.
   * Le fichier *.gitignore* inclus l'ensemble des extensions qui ne sont pas partagées en ligne.
-  * *xxxxxxx* nous permet avec l'input d'un film de ressortir 5 films les plus similaires. Il s'appuie sur le CSV cosine_features.csv qui contient l'ensemble des films et des features importantes.
-Cette section lit des fichiers CSV contenant des données sur les films, et utilise _plotnine_ ou _matplotlib_ pour créer un scatter plot, box plot, pairplot, ou des camemberts représentant les informations du data set.
-  * On utilise le fichier *xxxxxxx* pour la recommandation d'un film.
+  * Le fichier *module_film* contien l'orm et le mapping de la base de données
+  * Le fichier *database* contien la conection à la base de données et la création du dataframe
+  * Le fichier *module_user* contien la classe utilisateur
+  * Le fichier *main* contient l'aplication flask, l'appelle des modules et de la database
   
  
 Ce code est une mise en œuvre d'un pipeline complet pour la construction et l'évaluation de modèles de régression utilisant différents algorithmes et techniques de prétraitement des données. Les différentes bibliothèques utilisées dans le code sont importées, y compris des outils de machine learning de scikit-learn, ainsi que pandas, numpy et psycopg2 pour la manipulation des données.
