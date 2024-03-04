@@ -46,7 +46,6 @@ from sqlalchemy import select
 import pandas as pd
 from sqlalchemy import Column, Integer, Text, MetaData, Table, String, Float
 from sqlalchemy import select
-
 from sqlalchemy.orm import declarative_base
 
 # =========================================================
